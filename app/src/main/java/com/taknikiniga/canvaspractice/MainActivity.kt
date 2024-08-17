@@ -56,6 +56,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
+import com.taknikiniga.canvaspractice.lession.LessionThree
 import com.taknikiniga.canvaspractice.ui.theme.CanvasPracticeTheme
 import java.lang.annotation.Repeatable
 
@@ -66,7 +67,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CanvasPracticeTheme {
-
+                LessionThree()
             }
         }
     }
