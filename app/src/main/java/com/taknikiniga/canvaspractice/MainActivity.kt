@@ -34,6 +34,7 @@ import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -56,6 +57,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
+import com.taknikiniga.canvaspractice.lession.ColorAnimator
+import com.taknikiniga.canvaspractice.lession.Lession5
 import com.taknikiniga.canvaspractice.lession.LessionThree
 import com.taknikiniga.canvaspractice.ui.theme.CanvasPracticeTheme
 import java.lang.annotation.Repeatable
@@ -67,7 +70,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             CanvasPracticeTheme {
-                LessionThree()
+                Scaffold {
+                    Surface(modifier = Modifier.padding(it)) {
+
+                        Lession5()
+                    }
+                }
             }
         }
     }
