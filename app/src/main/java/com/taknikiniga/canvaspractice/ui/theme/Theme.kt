@@ -64,7 +64,7 @@ fun CanvasPracticeTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = CanvasTypography,
         content = content
     )
 }

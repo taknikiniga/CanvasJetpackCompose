@@ -31,7 +31,9 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.layout.wrapContentWidth
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -58,6 +60,7 @@ import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
 import com.taknikiniga.canvaspractice.lession.ColorAnimator
+import com.taknikiniga.canvaspractice.lession.DayView
 import com.taknikiniga.canvaspractice.lession.Lession5
 import com.taknikiniga.canvaspractice.lession.LessionThree
 import com.taknikiniga.canvaspractice.ui.theme.CanvasPracticeTheme
@@ -71,9 +74,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             CanvasPracticeTheme {
                 Scaffold {
-                    Surface(modifier = Modifier.padding(it)) {
+                    Surface(modifier = Modifier
+                        .padding(it))
+                        {
 
-                        Lession5()
+                        DayView()
                     }
                 }
             }
