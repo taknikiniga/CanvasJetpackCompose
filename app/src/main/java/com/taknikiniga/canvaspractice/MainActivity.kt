@@ -78,7 +78,7 @@ class MainActivity : ComponentActivity() {
                         .padding(it))
                         {
 
-                        DayView()
+                            PracticeDayView()
                     }
                 }
             }
