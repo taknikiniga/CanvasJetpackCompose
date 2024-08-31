@@ -65,6 +65,9 @@ dependencies {
     implementation ("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+
+    //For Razorpay checkout SDK
+    implementation ("com.razorpay:checkout:1.6.24")
     
 
     testImplementation(libs.junit)
